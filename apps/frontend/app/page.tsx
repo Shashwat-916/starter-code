@@ -1,6 +1,5 @@
 import Image, { type ImageProps } from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
+
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -20,7 +19,7 @@ const ThemeImage = (props: Props) => {
 
 export default function Home() {
   return (
-    <div>
+    <div className="text-4xl text-green-500 font-bold underline">
       Hello from Frontend
     </div>
   );
